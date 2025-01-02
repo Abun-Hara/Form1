@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <form id="validationForm">
+        <div>
+            <label for="firstName">First Name:</label>
+            <div class="input-container">
+                <input type="text" id="firstName" name="firstName" required>
+                <span id="firstNameValidation" class="validation-message"></span>
+            </div>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <div class="input-container">
+                <input type="password" id="password" name="password" required>
+                <span id="passwordValidation" class="validation-message"></span>
+            </div>
+        </div>
+        <div>
+            <label for="phoneNumber">Phone Number:</label>
+            <div class="input-container">
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
+                <span id="phoneValidation" class="validation-message"></span>
+            </div>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <div class="input-container">
+                <input type="number" id="age" name="age" required>
+                <span id="ageValidation" class="validation-message"></span>
+            </div>
+        </div>
+        <div>
+            <label for="comments">Comments:</label>
+            <div class="input-container">
+                <textarea id="comments" name="comments" required></textarea>
+                <span id="commentsValidation" class="validation-message"></span>
+            </div>
+        </div>
+        <button type="submit" id="submitButton" disabled>Submit</button>
+    </form>
+    <script src="javascript/form.js"></script>
+</body>
+</html>

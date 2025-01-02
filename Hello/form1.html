@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practicing Form validtion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/form1.css">
+</head>
+
+<body>
+    <form action="https://www.youtube.com" id="validatForm">
+        <div class="wholeform">
+            <label for="firstName">First Name:</label>
+            <div class="inputContiener">
+                <input type="text" name="firstName" id="firstName">
+                <span class="validationText" id="firstNameValidation">Hes</span>
+            </div>
+            <label for="lastName">Last Name:</label>
+            <div class="inputContiener">
+                <input type="text" name="lastName" id="lastName">
+                <span class="validationText" id="lastNameValidation"></span>
+            </div>
+            <label for="email">Email:</label>
+            <div class="inputContiener">
+                <input type="email" name="email" id="email">
+                <span class="validationText" id="emailValidation"></span>
+            </div>
+            <label for="phone">Phone:</label>
+            <div class="inputContiener">
+                <input type="tel" name="phone" id="phone">
+                <span class="validationText" id="phoneValidation"></span>
+            </div>
+            <label for="age">Age:</label>
+            <div class="inputContiener">
+                <input type="number" name="age" id="age" value="18">
+                <span class="validationText" id="ageValidation"></span>
+            </div>
+            <label for="password">Password:</label>
+            <div class="inputContiener">
+                <input type="password" name="password" id="password">
+                <span class="validationText" id="passWordValidation"></span>
+            </div>
+            <button type="submit" id="submitButton" disabled>Submit</button>
+        </div>
+    </form>
+    <script src="Javascript/form1.js"></script>
+</body>
+
+</html>
